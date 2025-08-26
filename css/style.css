@@ -1,0 +1,879 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap');
+
+@font-face {
+    font-family: "Barlow Semibold";
+    src: url(../assets/fonts/Barlow-SemiBold.ttf);
+}
+
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+h1 {
+    color: darkgoldenrod;
+    margin-bottom: 5px;
+}
+
+p {
+    color: rgb(0, 0, 0);
+    margin-top: 5px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+}
+
+.logo img {
+    max-width: 100%;
+    width: 80px;
+}
+
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.titulos {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 5px;
+    clear: both;
+}
+
+.nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+/* MENÚ */
+.desktop {
+    display: none;
+}
+
+.desktop .menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    gap: 60px;
+    margin: 20px;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 750;
+}
+
+.menu-hamburguesa {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 10;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out, visibility 0s 0.5s,
+        opacity 0.5s linear;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 9;
+}
+
+.mobile-menu ul.menu {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+}
+
+.mobile-menu.open {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+    transition: transform 0.5s ease-in-out, visibility 0s, opacity 0.5s linear;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.mobile-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    display: block;
+    padding: 15px;
+}
+
+.pag-activa a {
+    color: darkgoldenrod;
+}
+
+/* ----- */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #25D366;
+    color: white;
+
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+/* INDEX */
+.FrisonSolumtec {
+    font-family: "Poppins", sans-serif;
+    font-size: 60px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+
+.indexBackground {
+    background-image: url("../assets/img/frison_solumtec_fondo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.tusuelo {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+    padding-top: 1px;
+}
+
+.subindex1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.txtindex1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.movDeSuelo {
+    text-decoration: underline;
+}
+
+.subindex {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.subtituloindex h4 {
+    margin-bottom: 0px;
+}
+
+.textoindex p {
+    margin-top: 10px;
+}
+
+.txtindex {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contenidovid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* SOBRE NOSOTROS */
+.sobreNosBackground {
+    background-image: url("../assets/img/fondo_3.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+.introSN1,
+.introSN2,
+.introSN3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.imgMarcelo,
+.imgMarcelo2,
+.imgMarcelo3 {
+    width: 50%;
+    height: auto;
+}
+
+.sobreNosCont {
+    max-width: 80%;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px;
+}
+
+.subtSobreNos {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 0;
+}
+
+.txtSobreNos {
+    font-size: 14px;
+    color: white;
+}
+
+.nosotros {
+    font-style: italic;
+    color: black;
+}
+
+/* SERVICIOS */
+.servicios {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nuestrosServ {
+    font-style: italic;
+    color: black;
+}
+
+.servBackground {
+    background-image: url("../assets/img/fondo_4.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.serviciosA {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.serviciosA img {
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+}
+
+.servA {
+    position: relative;
+    width: 80%;
+    height: auto;
+}
+
+.servA h2 {
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px 10px;
+    width: auto;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.serviciosB {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.serviciosB img {
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+}
+
+.servB {
+    position: relative;
+    width: 80%;
+    height: auto;
+}
+
+.servB h2 {
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px 10px;
+    width: auto;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.serviciosC {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.serviciosC img {
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+}
+
+.servC {
+    position: relative;
+    width: 80%;
+    height: auto;
+}
+
+.servC h2 {
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px 10px;
+    width: auto;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.txtservicios {
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tituloservicios {
+    font-size: 18px;
+}
+
+.ver-mas-container {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ver-mas-contenido {
+    background-color: #fefefec7;
+    margin: 5% auto;
+    padding: 10px;
+    border: 1px solid #000000;
+    width: 40%;
+    max-width: 600px;
+    position: relative;
+}
+
+.cerrar {
+    color: #080000;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.boton-ver-mas {
+    background-color: darkgoldenrod;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    padding: 5px 5px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 12x;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.boton-ver-mas:hover {
+    background-color: #000000;
+}
+
+/* TRABAJOS */
+
+.vidtrabajos {
+    width: 40%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.video {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    width: 95%;
+}
+
+.vidtrabajos video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.trabajos {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+.trabajosBackground {
+    background-image: url("../assets/img/fondo_2.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: 0 fixed;
+}
+
+/* CONTACTANOS */
+.contbackground {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: scroll;
+    background: linear-gradient(to right, rgba(179, 179, 179, 0.5), transparent), url("../assets/img/frison_solumtec_fondo.png");
+}
+
+.mapa {
+    text-align: center;
+}
+
+.contactotxt {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.instagram-contacto,
+.whatsapp-contacto {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+.contactanos1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 10px;
+}
+
+.contactanos2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: auto;
+}
+
+.contactanos3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+}
+
+.contactanos4 {
+    font-size: 20px;
+    color: white;
+    margin: 0;
+}
+
+.contactanos5 {
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+}
+
+.contactanos6 {
+    font-size: 20px;
+    color: white;
+    margin: 0;
+}
+
+.footer {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.footer i {
+    font-size: 30px;
+    color: black;
+}
+
+/* RESPONSIVE */
+
+/*header nav.mobile {
+    display: none;
+    text-align: center;
+}*/
+
+@media screen and (min-width: 768px) {
+
+    .desktop {
+        display: block;
+    }
+
+    .desktop .menu {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        align-items: center;
+        gap: 60px;
+        margin: 0;
+        padding-top: 0;
+        padding-left: 0;
+    }
+
+    .menu-hamburguesa,
+    .mobile-menu {
+        display: none;
+    }
+
+    p {
+        padding: 10px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+    }
+
+    .menu {
+        flex-direction: row;
+        gap: 15px;
+        padding-left: 0;
+        margin: 5px;
+    }
+
+    .menu a {
+        font-size: 20px;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .titulos,
+    .subtituloindex h3 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .subtSobreNos {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .FrisonSolumtec {
+        font-size: 50px;
+    }
+
+    .subindex,
+    .servicios {
+        font-size: 16px;
+    }
+
+    .subtSobreNos {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .introSN1,
+    .introSN3 {
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+        padding: 20px;
+    }
+
+    .introSN2 {
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        padding: 20px;
+    }
+
+    .txtSobreNos {
+        font-size: 14px;
+        color: white;
+    }
+
+    .listasobrenos {
+        font-size: 14px;
+        color: white;
+    }
+
+    .imgMarcelo,
+    .imgMarcelo2,
+    .imgMarcelo3 {
+        width: 300px;
+    }
+
+    .sobreNosCont {
+        max-width: 600px;
+        text-align: justify;
+        padding-top: 5px;
+    }
+
+    .serviciosA,
+    .serviciosB,
+    .serviciosC {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .servA,
+    .servB,
+    .servC {
+        width: 400px;
+    }
+
+    .serviciosA img,
+    .serviciosB img,
+    .serviciosC img {
+        width: 400px;
+    }
+
+    .servA h2 {
+        top: 53%;
+        width: 60%;
+    }
+
+    .servB h2 {
+        top: 48%;
+        width: 60%;
+    }
+
+    .servC h2 {
+        bottom: 33%;
+        width: auto;
+    }
+
+    .servicios {
+        font-size: 20px;
+        width: auto;
+    }
+
+    .txtservicios {
+        font-size: 15px;
+        width: auto;
+    }
+
+    .vidtrabajos {
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .vidtrabajos video {
+        width: 400px;
+        height: auto;
+    }
+
+    .video {
+        width: auto;
+        padding: 20px;
+        margin-bottom: 170px;
+    }
+
+    .trabajos {
+        font-size: 20px;
+    }
+
+    .trabajosBackground,
+    .contbackground,
+    .servBackground,
+    .sobreNosBackground,
+    .indexBackground {
+        background-attachment: fixed;
+    }
+
+    .contactotxt {
+        max-width: 90%;
+        padding: 10px;
+    }
+
+    .contactotxt p {
+        font-size: 14px;
+    }
+
+    .contactanos1 {
+        font-size: 16px;
+    }
+
+    .contactanos2 {
+        font-size: 12px;
+        width: 80%;
+    }
+
+    .footer {
+        flex-direction: row;
+        gap: 90px;
+    }
+}
