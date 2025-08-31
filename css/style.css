@@ -161,6 +161,11 @@ body {
     color: darkgoldenrod;
 }
 
+.nav-links {
+    display: none;
+    flex-direction: column;
+}
+
 .nav-links.active {
     display: flex;
 }
@@ -694,6 +699,11 @@ body {
     .menu-hamburguesa,
     .mobile-menu {
         display: none;
+    }
+
+    .nav-links {
+        display: flex; 
+        flex-direction: row;
     }
 
     p {
