@@ -111,7 +111,7 @@ body {
     z-index: 10;
 }
 
-.mobile-menu {
+/*.mobile-menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -155,10 +155,38 @@ body {
     font-size: 24px;
     display: block;
     padding: 15px;
-}
+}*/
 
 .pag-activa a {
     color: darkgoldenrod;
+}
+
+.nav-links ul.menu {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-links.open {
+    transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
+    transition: transform 0.5s ease-in-out, visibility 0s, opacity 0.5s linear;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    display: block;
+    padding: 15px;
 }
 
 .nav-links {
