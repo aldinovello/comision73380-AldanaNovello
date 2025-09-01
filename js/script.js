@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const menuButton = document.querySelector('.menu-hamburguesa');
-    const navMenu = document.querySelector('.nav-links');
+    const navMenu = document.querySelector('.mobile-menu');
 
     if (menuButton && navMenu) {
         menuButton.addEventListener('click', function() {
