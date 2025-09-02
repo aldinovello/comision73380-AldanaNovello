@@ -665,10 +665,6 @@ body {
     .desktop {
         display: none;
     }
-
-    .menu-hamburguesa {
-        display: block;
-    }
 }
 
 @media screen and (min-width: 768px) {
@@ -688,8 +684,7 @@ body {
         padding-left: 0;
     }
 
-    .menu-hamburguesa,
-    .mobile-menu {
+    .menu-hamburguesa {
         display: none;
     }
 
