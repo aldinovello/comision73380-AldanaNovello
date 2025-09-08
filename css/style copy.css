@@ -6,6 +6,11 @@
     src: url(../assets/fonts/Barlow-SemiBold.ttf);
 }
 
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
 h1 {
     color: darkgoldenrod;
     margin-bottom: 5px;
@@ -20,6 +25,18 @@ p {
     padding: 20px;
     line-height: 1.6;
 }
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+}
+
+.logo img {
+    max-width: 100%;
+    width: 80px;
+}
+
 
 main {
     flex: 1;
@@ -56,17 +73,6 @@ body {
     display: flex;
     flex-grow: 1;
     justify-content: center;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    margin-right: 0;
-}
-
-.logo img {
-    max-width: 100%;
-    width: 80px;
 }
 
 /* MENÚ */
@@ -161,6 +167,7 @@ body {
     z-index: 1000;
     background-color: #25D366;
     color: white;
+
     font-size: 30px;
     width: 60px;
     height: 60px;
@@ -200,7 +207,7 @@ body {
     padding-top: 1px;
 }
 
-.subindex1, .subindex {
+.subindex1 {
     font-family: "Poppins", sans-serif;
     font-size: 20px;
     text-align: center;
@@ -208,7 +215,7 @@ body {
     padding-top: 20px;
 }
 
-.txtindex1, .txtindex {
+.txtindex1 {
     font-family: "Poppins", sans-serif;
     font-size: 15px;
     text-align: center;
@@ -222,12 +229,30 @@ body {
     text-decoration: underline;
 }
 
+.subindex {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+}
+
 .subtituloindex h4 {
     margin-bottom: 0px;
 }
 
 .textoindex p {
     margin-top: 10px;
+}
+
+.txtindex {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .contenidovid {
@@ -624,8 +649,6 @@ body {
     margin: 0;
 }
 
-/* FOOTER */
-
 .footer {
     display: flex;
     gap: 30px;
@@ -637,8 +660,6 @@ body {
     font-size: 30px;
     color: black;
 }
-
-/* RESPONSIVE */
 
 @media screen and (max-width: 767px) {
     .desktop {
