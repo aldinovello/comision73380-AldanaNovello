@@ -551,8 +551,7 @@ footer .footer i {
 }
 
 .vidtrabajos {
-  width: 40%;
-  /*revisar*/
+  width: 40%; /*revisar*/
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -685,4 +684,4 @@ footer .footer i {
   text-align: center;
 }
 
-/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=estilos%20copy.css.map */
