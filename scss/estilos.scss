@@ -86,9 +86,10 @@ p {
 
 header {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     padding: 20px;
+    position: relative;
 
     @media screen and (min-width: 768px) {
         justify-content: space-between;
@@ -98,7 +99,11 @@ header {
     .logo {
         display: flex;
         align-items: center;
-        margin-right: 0;
+        margin-right: auto;
+
+        @media screen and (min-width: 768px) {
+            margin-right: 0;
+        }
 
         img {
             max-width: 100%;
@@ -134,6 +139,7 @@ header {
 
             .menu {
                 display: flex;
+                flex-direction: row;
                 justify-content: flex-end;
                 list-style: none;
                 align-items: center;
@@ -141,6 +147,10 @@ header {
                 margin: 0;
                 padding-top: 0;
                 padding-left: 0;
+
+                .pag-activa a {
+                    color: darkgoldenrod;
+                }
             }
         }
 
@@ -180,6 +190,10 @@ header {
             align-items: center;
             padding: 0;
             text-align: center;
+
+            .pag-activa a {
+                color: darkgoldenrod;
+            }
         }
     }
 
@@ -247,6 +261,7 @@ footer {
     margin: 0;
     padding: 0;
     clear: both;
+    color: darkgoldenrod;
 
     @media screen and (min-width: 768px) {
         font-size: 50px;
