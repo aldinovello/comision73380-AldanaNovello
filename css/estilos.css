@@ -23,19 +23,19 @@ body.indexBackground, body.sobreNosBackground, body.servBackground, body.trabajo
   }
 }
 body.indexBackground {
-  background-image: url("../assets/img/frison_solumtec_fondo.png");
+  background-image: url("../assets/img/frison_solumtec_fondo.jpg");
   background-attachment: scroll;
 }
 body.sobreNosBackground {
-  background-image: url("../assets/img/fondo_3.png");
+  background-image: url("../assets/img/fondo_3.jpg");
   background-attachment: scroll;
 }
 body.servBackground {
-  background-image: url("../assets/img/fondo_4.png");
+  background-image: url("../assets/img/fondo_4.jpg");
   background-attachment: fixed;
 }
 body.trabajosBackground {
-  background-image: url("../assets/img/fondo_2.png");
+  background-image: url("../assets/img/fondo_2.jpg");
   background-attachment: fixed;
 }
 body.contbackground {
