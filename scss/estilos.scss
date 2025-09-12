@@ -21,7 +21,6 @@ body {
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
-        background-attachment: scroll;
 
         @media screen and (min-width: 768px) {
             background-attachment: fixed;
@@ -29,27 +28,27 @@ body {
     }
 
     &.indexBackground {
-        background-image: url("../assets/img/frison_solumtec_fondo.jpg");
+        background-image: url("../assets/img/frison_fondo_1.png");
         background-attachment: scroll;
     }
 
     &.sobreNosBackground {
-        background-image: url("../assets/img/fondo_3.jpg");
+        background-image: url("../assets/img/frison_fondo_3.png");
         background-attachment: scroll;
     }
 
     &.servBackground {
-        background-image: url("../assets/img/fondo_4.jpg");
+        background-image: url("../assets/img/frison_fondo_4.png");
         background-attachment: fixed;
     }
 
     &.trabajosBackground {
-        background-image: url("../assets/img/fondo_2.jpg");
+        background-image: url("../assets/img/frison_fondo_2.png");
         background-attachment: fixed;
     }
 
     &.contbackground {
-        background: linear-gradient(to right, rgba(179, 179, 179, 0.5), transparent), url("../assets/img/frison_solumtec_fondo.png");
+        background: linear-gradient(to right, rgba(179, 179, 179, 0.5), transparent), url("../assets/img/frison_fondo_5.png");
         background-attachment: scroll;
     }
 }
